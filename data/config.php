@@ -8,13 +8,13 @@ class config{
 	const VERSION = 8;
 	
 	// Will be shown pretty much everywhere.
-	const SERVER_NAME = "Webifyr's 4GET search engine";
+	const SERVER_NAME = "4get";
 	
 	// Will be shown in <meta> tag on home page
-	const SERVER_SHORT_DESCRIPTION = "Webifyr's instance of 4get a proxy search engine";
+	const SERVER_SHORT_DESCRIPTION = "4get is a proxy search engine that doesn't suck.";
 	
 	// Will be shown in server list ping (null for no description)
-	const SERVER_LONG_DESCRIPTION = "Use 4get to search the web without being tracked by big tech companies like Google, Facebook, and Twitter. 4get is a privacy-focused search engine that doesn't track you or sell your data to advertisers."; 
+	const SERVER_LONG_DESCRIPTION = null;
 	
 	// Add your own themes in "static/themes". Set to "Dark" for default theme.
 	// Eg. To use "static/themes/Cream.css", specify "Cream".
@@ -29,7 +29,7 @@ class config{
 	
 	// 0 = disabled, 1 = ask for image captcha, @TODO: 2 = invite only (users needs a pass)
 	// VERY useful against a targetted attack
-	const BOT_PROTECTION = 1;
+	const BOT_PROTECTION = 0;
 	
 	// if BOT_PROTECTION is set to 1, specify the available datasets here
 	// images should be named from 1.png to X.png, and be 100x100 in size
@@ -39,11 +39,6 @@ class config{
 		//["birds", 2263],
 		//["fumo_plushies", 1006],
 		//["minecraft", 848]
-		["bicycle",780],
-		["bridge",533],
-		["bus",1209],
-
-
 	];
 	
 	// If this regex expression matches on the user agent, it blocks the request
@@ -119,8 +114,7 @@ class config{
 		"https://4get.ch",
 		"https://4get.edmateo.site",
 		"https://4get.sudovanilla.org",
-		"https://search.mint.lgbt",
-		"https://search.webifyr.ca"
+		"https://search.mint.lgbt"
 	];
 	
 	// Default user agent to use for scraper requests. Sometimes ignored to get specific webpages
